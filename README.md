@@ -8,4 +8,4 @@ In order to make the program work you need to download cv2 (OpenCV) and numpy (y
 
 In order to execute correctly the program you need to:
   1. insert the server IP address you want to connect to
-  2. execute the server.py first and then the client.py
+  2. execute the server.py first and the client.py secondly
