@@ -25,9 +25,10 @@ class Server:
             print(f"Sto tentando di re-inizializzare il server...")
         #accettazione del client con il comando accept()
         conn, indirizzo_client = socket_server.accept()
-        print(f"Connessione Server-Client stabilita: {indirizzo_client}")
+        print(f"Connessione Server-Client stabilita: {indirizzo_server} - {indirizzo_client}")
         self.ricezione_frame(conn)
         socket_server.close()
+        print(f"Connessione Server-Client chiusa: {indirizzo_server} - {indirizzo_client}")
 
     def ricezione_frame(self, conn):
         data = b"" #it means bytes

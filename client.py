@@ -27,6 +27,7 @@ class Client:
         #sending the request (frame to analyze) with the command send() (and an auxiliary function invia_frame())
         self.invia_frame(socket_client)
         socket_client.close()
+        print(f"Connessione al server {indirizzo_server} chiusa")
 
     def invia_frame(self, socket):
         #loading camera or video file
@@ -38,16 +39,19 @@ class Client:
 
         while True:
             ret, frame = cap.read() #process with each frame
-            result, frame = cv2.imencode('.jpg', frame, encode_parameters)
-            data = pickle.dumps(frame, 0)
-            size = len(data)
+            if ret: #up until there are frames to send
+                result, frame = cv2.imencode('.jpg', frame, encode_parameters)
+                data = pickle.dumps(frame, 0)
+                size = len(data)
 
-            #invio del frame tramite la socket
-            socket.sendall(struct.pack(">L", size) + data)
-            frame_id +=1 #count the frames
+                #invio del frame tramite la socket
+                socket.sendall(struct.pack(">L", size) + data)
+                frame_id +=1 #count the frames
 
-            #ricezione dell'elaborazione de parte del server
-            self.ricevi_informazioni(socket, frame_id, frame, starting_time)
+                #ricezione dell'elaborazione de parte del server
+                self.ricevi_informazioni(socket, frame_id, frame, starting_time)
+            else:
+                return
 
     #receiving of the answer from the server with the command recv()
     def ricevi_informazioni(self, socket, frame_id, frame, starting_time):
