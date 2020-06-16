@@ -7,5 +7,5 @@ INSTRUCTIONS:
 In order to make the program work you need to download cv2 (OpenCV) and numpy (you can do it through the command line using pip).
 
 In order to execute correctly the program you need to:
-  1. insert the correct server IP address you want to connect to
+  1. insert the server IP address you want to connect to
   2. execute the server.py first and then the client.py
