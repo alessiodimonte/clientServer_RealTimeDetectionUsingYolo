@@ -1,6 +1,6 @@
 # clientServer_RealTimeDetectionUsingYolo
 
-This is a program able to run YOLO and recognize objects in a video. The video is sent from a client to the server, which does the analysis and sends back to the client the results through the Python socket library.
+This is a program able to run YOLO and recognize objects in a video. The video is sent from a client to a server, which does the analysis and sends back to the client the results through the Python socket library.
 
 INSTRUCTIONS:
 
