@@ -5,7 +5,7 @@ This is a program able to run YOLO algorithm and recognize objects in a video. T
 INSTRUCTIONS:
 
 In order to make the program work you need to:
-  - download cv2 (OpenCV) and numpy (you can do it through the command line using pip)
+  - download cv2 (OpenCV), Numpy and PyCrypto (you can do it through the command line using pip)
   - download the files: "coco.names", "yolo3.weights", "yolo3.cfg", "client.py", "server.py"
   - have all in the same folder
 
@@ -15,4 +15,8 @@ In order to execute correctly the program you need to:
   2. execute firstly "server.py"  and secondly "client.py"
 
 Downloads:
+  - OpenCv: https://pypi.org/project/opencv-python/
+  - Numpy: https://pypi.org/project/numpy/
+  - PyCrypto: https://pypi.org/project/pycrypto/
   - yolo3.weights: https://pjreddie.com/media/files/yolov3.weights
+  - yolo3.
