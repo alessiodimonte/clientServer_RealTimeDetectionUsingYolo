@@ -13,3 +13,7 @@ In order to execute correctly the program you need to:
   1. insert the server IP address you want to connect to (the IP of the machine where the server is running) -> at the bottom of the "client.py" and "server.py"  
       in the function "elaborazione_server(IP address server)" and "connessione_server(IP address server)"
   2. execute firstly "server.py"  and secondly "client.py"
+
+Downloads:
+  - yolo3.weights: https://pjreddie.com/media/files/yolov3.weights
+  - yolo3.cfg:
