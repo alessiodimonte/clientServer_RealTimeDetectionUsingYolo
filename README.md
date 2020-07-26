@@ -16,4 +16,3 @@ In order to execute correctly the program you need to:
 
 Downloads:
   - yolo3.weights: https://pjreddie.com/media/files/yolov3.weights
-  - yolo3.cfg:
