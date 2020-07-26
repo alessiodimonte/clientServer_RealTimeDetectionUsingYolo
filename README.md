@@ -19,4 +19,5 @@ Downloads:
   - Numpy: https://pypi.org/project/numpy/
   - PyCrypto: https://pypi.org/project/pycrypto/
   - yolo3.weights: https://pjreddie.com/media/files/yolov3.weights
-  - yolo3.
+  - yolo3.cfg: in the folder
+  - coco.names: in the folder
