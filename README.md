@@ -12,6 +12,7 @@ In order to make the program work you need to:
   On Ubuntu the commands to prepare the environment are:
    - sudo apt install net-tools (in order to see the IP address of the server on the Virtual Machine with the command ifconfig)
    - sudo apt install python3-pip
+   - sudo apt install python3-numpy
    - pip3 install pycrypto
    - sudo apt install python3-opencv
    - sudo apt update
