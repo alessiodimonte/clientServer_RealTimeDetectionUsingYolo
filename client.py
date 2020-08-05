@@ -32,6 +32,10 @@ class Client:
             print(f"Something went wrong, exiting... \n ERROR: {errore}")
             sys.exit()
 
+        t = time.localtime()
+        current_time = time.strftime("%H:%M:%S", t)
+        print("Starting time: ", current_time)
+
         #creation of the client public and private keys for RSA shared-key exchange (used in HMAC)
         private_key_client, public_key_client = self.RSA_keys_generation_client()
         #sending of the client public key to the server
@@ -42,6 +46,11 @@ class Client:
         self.invia_frame(socket_client, shared_key)
         socket_client.close()
         print(f"Connection to server {indirizzo_server} closed")
+
+        s = time.localtime()
+        final_time = time.strftime("%H:%M:%S", s)
+        print("Starting time: ", current_time)
+        print("Final time: ", final_time)
 
     def RSA_keys_generation_client(self):
         random_generator = Random.new().read
@@ -206,6 +215,7 @@ class Client:
                 return
 
     def store_frames(self, out, frame):
+        cv2.waitKey(118)
         out.write(frame)
 
 #for each object contained in the classes we assign a specific rectangle color (in my case I have 80 different objects that can be identified)
