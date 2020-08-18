@@ -9,7 +9,7 @@ In order to make the program work you need to:
   - download the files: "coco.names", "yolo3.weights", "yolo3.cfg", "client.py", "server.py"
   - have all in the same folder (my advise is to have everything on the desktop)
   
-  On Ubuntu the commands to prepare the environment are:
+  On Ubuntu 20.04 the commands to prepare the environment are:
    - sudo apt install net-tools (in order to see the IP address of the server on the Virtual Machine with the command ifconfig)
    - sudo apt install python3-pip
    - sudo apt install python3-numpy
@@ -27,5 +27,5 @@ Downloads:
   - Numpy: https://pypi.org/project/numpy/
   - PyCrypto: https://pypi.org/project/pycrypto/
   - yolo3.weights: https://pjreddie.com/media/files/yolov3.weights
-  - yolo3.cfg: in the folder
-  - coco.names: in the folder
+  - yolo3.cfg: in the git folder
+  - coco.names: in the git folder
