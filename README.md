@@ -2,7 +2,7 @@
 
 This is a program able to run YOLO algorithm and recognize objects in a video. The video is sent from a client to a server, which does the analysis and sends back to the client the results through the Python socket.
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/2kNS57uTeEU/0.jpg)](https://youtu.be/2kNS57uTeEU "Everything Is AWESOME")
+[![Click to watch video](https://img.youtube.com/vi/2kNS57uTeEU/0.jpg)](https://youtu.be/2kNS57uTeEU "Click to watch video")
 
 INSTRUCTIONS:
   
